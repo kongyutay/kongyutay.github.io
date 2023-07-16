@@ -1,0 +1,127 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	background: url(./images/f1_1.jpg) no-repeat center 0;
+	background-size: cover;
+	height: 100%;
+}
+
+.cloud img {
+	position: absolute;
+	left: 50%;
+}
+
+.cloud img:nth-child(1) {
+	margin-left: -250px;
+	top: 20px;
+	animation: cloud 1s infinite alternate linear;
+}
+
+.cloud img:nth-child(2) {
+	margin-left: 400px;
+	top: 100px;
+	animation: cloud 1s infinite alternate linear 0.4s;
+}
+
+.cloud img:nth-child(3) {
+	margin-left: -550px;
+	top: 200px;
+	animation: cloud 1s infinite alternate linear 0.6s;
+}
+
+.balloon img {
+	position: absolute;
+	left: 50%;
+	top: 20%;
+	margin-left: -400px;
+	animation: balloon 2s infinite alternate linear;
+}
+
+.giraffe img {
+	position: absolute;
+	left: 50%;
+	top: 15%;
+	margin-left: 160px;
+}
+
+.text img {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	animation: text 1s;
+}
+
+.bubble img {
+	position: absolute;
+	left: 50%;
+	bottom: 42px;
+}
+
+.bubble img:nth-child(1) {
+	margin-left: -443px;
+	animation: bubble 1s infinite 0.2s alternate ease-in-out;
+}
+
+.bubble img:nth-child(2) {
+	margin-left: -198px;
+	animation: bubble 1s infinite 0.4s alternate ease-in-out;
+}
+
+.bubble img:nth-child(3) {
+	margin-left: 50px;
+	animation: bubble 1s infinite 0.6s alternate ease-in-out;
+}
+
+.bubble img:nth-child(4) {
+	margin-left: 295px;
+	animation: bubble 1s infinite 0.8s alternate ease-in-out;
+}
+
+@keyframes cloud {
+	100% {
+		transform: translate(20px);
+	}
+}
+
+@keyframes balloon {
+	100% {
+		transform: translateY(-20px)
+	}
+}
+
+@keyframes text {
+	/* 默认到小，到大，到小，默认 */
+	0% {
+		transform: translate(-50%, -50%) scale(1);
+	}
+
+	20% {
+		transform: translate(-50%, -50%) scale(0.1);
+	}
+
+	40% {
+		transform: translate(-50%, -50%) scale(1.5);
+	}
+
+	70% {
+		transform: translate(-50%, -50%) scale(0.8);
+	}
+
+	100% {
+		transform: translate(-50%, -50%) scale(1);
+	}
+}
+
+@keyframes bubble {
+	100% {
+		transform: translateY(-10px);
+	}
+}

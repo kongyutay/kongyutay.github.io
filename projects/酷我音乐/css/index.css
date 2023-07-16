@@ -1,0 +1,215 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+body,
+ul,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, PingFangSC-Regular, "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #333;
+}
+img {
+  vertical-align: bottom;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  color: #333;
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+body {
+  background-color: #f9fafb;
+  padding: 0 4vw;
+}
+header {
+  height: 13.33333333vw;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+header .left {
+  width: 62.66666667vw;
+  height: 13.33333333vw;
+  background-image: url(../assets/head.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+header a {
+  height: 8vw;
+  width: 21.33333333vw;
+  background-color: #ffe31b;
+  border-radius: 4vw;
+  text-align: center;
+  line-height: 8vw;
+  font-size: 3.73333333vw;
+}
+.search {
+  height: 13.86666667vw;
+  padding: 2.66666667vw 4vw;
+  margin-top: 13.33333333vw;
+}
+.search .text {
+  height: 8.53333333vw;
+  background-color: #f2f4f5;
+  border-radius: 4.26666667vw;
+  text-align: center;
+  line-height: 8.53333333vw;
+  color: #a1a4b3;
+  font-size: 3.73333333vw;
+}
+.search .text .iconfont {
+  font-size: 4.26666667vw;
+}
+.banner {
+  height: 28.8vw;
+  overflow: hidden;
+}
+.banner ul {
+  display: flex;
+  width: 276vw;
+}
+.banner ul li {
+  height: 28.8vw;
+  width: 92vw;
+}
+.banner ul li img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 1.33333333vw;
+}
+.title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4.26666667vw;
+  line-height: 6.66666667vw;
+}
+.title h4 {
+  font-size: 5.33333333vw;
+}
+.title a {
+  color: #a1a4b3;
+  font-size: 3.2vw;
+}
+.title a .iconfont {
+  font-size: 3.2vw;
+}
+.list {
+  margin-top: 5.33333333vw;
+}
+.list .content li {
+  height: 28vw;
+  background-color: white;
+  margin-bottom: 4.26666667vw;
+  border-radius: 2.66666667vw;
+  display: flex;
+}
+.list .content li .pic {
+  margin-right: 5.33333333vw;
+}
+.list .content li .pic img {
+  width: 28vw;
+  height: 28vw;
+  border-radius: 2.66666667vw;
+}
+.list .content li .txt a {
+  display: block;
+  font-size: 3.2vw;
+  color: #a1a4b3;
+  line-height: 1.8;
+}
+.list .content li .txt a.more {
+  font-size: 3.73333333vw;
+  color: black;
+}
+.list .content li .txt a.more .iconfont {
+  font-size: 4.26666667vw;
+}
+.recommend .content ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.recommend .content ul li {
+  height: 38.13333333vw;
+  width: 28vw;
+  margin-bottom: 4.26666667vw;
+}
+.recommend .content ul li .pic {
+  height: 28vw;
+  width: 28vw;
+  position: relative;
+}
+.recommend .content ul li .pic img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 2.66666667vw;
+}
+.recommend .content ul li .pic .cover {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 7.46666667vw;
+  width: 18.66666667vw;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  border-radius: 0 2.66666667vw;
+  text-align: center;
+  line-height: 7.46666667vw;
+  font-size: 3.73333333vw;
+}
+.recommend .content ul li .txt {
+  font-size: 3.73333333vw;
+}
+.download {
+  width: 92vw;
+  height: 12vw;
+  background-color: white;
+  position: fixed;
+  bottom: 8vw;
+  border-radius: 6vw;
+  padding: 0 2.66666667vw 0 4vw;
+}
+.download a {
+  display: flex;
+  align-items: center;
+  line-height: 12vw;
+}
+.download a img {
+  height: 9.6vw;
+  width: 9.6vw;
+  margin-right: 2.66666667vw;
+}
+.download a p {
+  flex: 1;
+  font-size: 3.73333333vw;
+}
+.download a span {
+  height: 8.53333333vw;
+  width: 8.53333333vw;
+  background-color: #f2f3f5;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 8.53333333vw;
+  font-size: 4.26666667vw;
+}
